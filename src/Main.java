@@ -1,9 +1,11 @@
 
-public class Main {
-    public static void main(String[] args) {
-        BmiService service = new BmiService();
-        int bmi;
-        bmi = service.calculate();
-        System.out.println("bmi-индекс:" + bmi);
+    public class Main {
+        public static void main(String[] args) {
+            BmiService service  = new BmiService();
+            int weightInKg = 98;
+            double heightInMeters = 1.87;
+            int BmiService;
+            int Bmi = service.calculate(weightInKg,heightInMeters);
+            System.out.println(Bmi);
+        }
     }
-}
